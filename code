@@ -1,0 +1,7 @@
+import random
+name = input("Welcome to my guessing game, State your name.")
+print("Hello" + name)
+Ans = random.randint(0,20)
+Guess = input("What is your guess")
+if int(Guess) > Ans:
+	print("Too High")
