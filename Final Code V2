@@ -1,0 +1,18 @@
+import random
+
+name = input("Welcome to my guessing game, State your name: ")
+print("Hello " + name)
+
+Ans = random.randint(1, 20)
+Counter = 0
+print("I am thinking of a number between 1 and 20")
+while True:
+    Guess = int(input("What is your guess: "))
+    Counter += 1
+    if Guess > Ans:
+        print("Too High")
+    elif Guess < Ans:
+        print("Too Low")
+    else:
+        print("Correct! You got it in "+ str(Counter) + "guesses!")
+        break
